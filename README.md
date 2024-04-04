@@ -128,6 +128,12 @@ password 7 0822404F1A0A
 login
 transport input telnet
 line vty
+password 7 0822404F1A0A
+login
+transport input telnet
+line vty 5 15
+login
+end
 ```
 
 
