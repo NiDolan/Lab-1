@@ -87,7 +87,7 @@ Packets: Sent = 4, Received = 3, Lost = 1 (25% loss),
 Approximate round trip times in milli-seconds:
 Minimum = 0ms, Maximum = 0ms, Average = 0ms
 ```
-diff
+
 - Пароль на vty линию и доступ по Telnet:
 ```
 SW01Niko(config)# line vty ?
@@ -100,7 +100,7 @@ SW01Niko(config-line)# transport in
 SW01Niko(config-line)# transport input telnet
 ```
 
-diff
+
 - Отобразить конфигурацию коммутатора:
 ```
 SW01Niko# show run
