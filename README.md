@@ -10,14 +10,14 @@
    - Каков диапазон значений, отображаемых в vty-линиях? *Ответ: 0-15*
    - Назначен ли IP-адрес сети VLAN 1? *Ответ: нет*
    - Какой MAC-адрес имеет SVI? *Ответ: ввел команду `show mac address-table`, он не показал MAC*
-   - Данный интерфейс включен? *Ответ: к какому именно интерфейсу вы обращаетесь?*
+   - Данный интерфейс включен? *Ответ: да*
    - Под управлением какой версии ОС Cisco IOS работает коммутатор? *Ответ: Version 15.0(2)SE4*
    - Как называется файл образа системы? *Ответ: C2960-LANBASEK9-M?*
    - Изучите свойства по умолчанию интерфейса FastEthernet, который используется компьютером PC-A.
      - Интерфейс включен или выключен? *Ответ: да*
      - Что нужно сделать, чтобы включить интерфейс? *Ответ: зайти на него через глоб конф и ввести `no shutdown`*
      - Какой MAC-адрес у интерфейса? *Ответ: ?*
-     - Какие настройки скорости и дуплекса заданы в интерфейсе? *Ответ: ?*
+     - Какие настройки скорости и дуплекса заданы в интерфейсе? *Ответ: ?наверное fulldupleks*
 
 ### Часть 2. Создание сети и настройка основных параметров устройства
 
@@ -75,8 +75,8 @@ Approximate round trip times in milli-seconds:
 Minimum = 0ms, Maximum = 0ms, Average = 0ms
 ```
 diff
-Copy code
 - Пароль на vty линию и доступ по Telnet:
+```
 SW01Niko(config)# line vty ?
 <0-15> First Line number
 SW01Niko(config)# line vty 0 4
@@ -85,10 +85,11 @@ SW01Niko(config-line)# password class
 SW01Niko(config-line)# login
 SW01Niko(config-line)# transport in
 SW01Niko(config-line)# transport input telnet
+```
 
 diff
-Copy code
 - Отобразить конфигурацию коммутатора:
+```
 SW01Niko# show run
 Building configuration...
 Current configuration : 1242 bytes
@@ -114,7 +115,7 @@ password 7 0822404F1A0A
 login
 transport input telnet
 line vty
-
+```
 
 
 
