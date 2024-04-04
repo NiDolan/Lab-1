@@ -64,15 +64,15 @@
 - Тестирование сквозного соединения, отправив эхо-запрос:
 C:> ping 192.168.1.1
 
-Pinging 192.168.1.1 with 32 bytes of data:
-Request timed out.
-Reply from 192.168.1.1: bytes=32 time<1ms TTL=255
-Reply from 192.168.1.1: bytes=32 time<1ms TTL=255
-Reply from 192.168.1.1: bytes=32 time<1ms TTL=255
-Ping statistics for 192.168.1.1:
-Packets: Sent = 4, Received = 3, Lost = 1 (25% loss),
-Approximate round trip times in milli-seconds:
-Minimum = 0ms, Maximum = 0ms, Average = 0ms
+-Pinging 192.168.1.1 with 32 bytes of data:
+-Request timed out.
+-Reply from 192.168.1.1: bytes=32 time<1ms TTL=255
+-Reply from 192.168.1.1: bytes=32 time<1ms TTL=255
+-Reply from 192.168.1.1: bytes=32 time<1ms TTL=255
+-Ping statistics for 192.168.1.1:
+-Packets: Sent = 4, Received = 3, Lost = 1 (25% loss),
+-Approximate round trip times in milli-seconds:
+-Minimum = 0ms, Maximum = 0ms, Average = 0ms
 
 diff
 Copy code
